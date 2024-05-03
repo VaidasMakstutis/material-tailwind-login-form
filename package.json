@@ -1,0 +1,20 @@
+{
+  "name": "material-tailwind-login-form",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "postcss src/styles.css -o src/output.css"
+  },
+  "keywords": [],
+  "author": "Vaidas Makštutis",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@material-tailwind/html": "^2.2.2",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.3"
+  }
+}
