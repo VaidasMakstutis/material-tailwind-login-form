@@ -4,7 +4,7 @@
     <title>Material Tailwind Login Form</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="pathTo/output.css" />
+    <link rel="text/css" href="pathTo/output.css" />
     <!-- Material Icons Link -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Font Awesome Link -->
@@ -14,13 +14,80 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" />
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
   </head>
   <body>
-    <button
-      class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-      data-ripple-light="true"
-    >
-      View More
-    </button>
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+      <!-- Login Card Content Will Go Here -->
+      <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-96 rounded-xl bg-clip-border">
+        <div
+          class="relative grid mx-4 mb-4 -mt-6 overflow-hidden text-white shadow-lg h-28 place-items-center rounded-xl bg-gradient-to-tr from-gray-900 to-gray-800 bg-clip-border shadow-gray-900/20"
+        >
+          <h3 class="block font-sans text-3xl antialiased font-semibold leading-snug tracking-normal text-white">Login Form</h3>
+        </div>
+        <div class="flex flex-col gap-4 p-6">
+          <div class="relative h-10 w-full min-w-[200px]">
+            <input
+              class="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+              placeholder="Your email"
+              type="email"
+              name="email"
+            />
+          </div>
+          <div class="relative h-10 w-full min-w-[200px]">
+            <input
+              class="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+              placeholder="Your password"
+              type="password"
+              name="password"
+            />
+          </div>
+          <div class="-ml-2.5">
+            <div class="inline-flex items-center">
+              <label htmlFor="checkbox" class="relative flex items-center p-3 rounded-full cursor-pointer">
+                <input
+                  type="checkbox"
+                  class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:bg-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
+                  id="checkbox"
+                />
+                <span
+                  class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label class="mt-px font-light text-gray-700 cursor-pointer select-none" htmlFor="checkbox"> Remember Me </label>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <button
+            class="w-full middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            data-ripple-light="true"
+            type="button"
+          >
+            Sign In
+          </button>
+          <p class="flex justify-center mt-6 font-sans text-sm antialiased font-light leading-normal text-inherit">
+            Don't have an account?
+            <a href="#signup" class="block ml-1 font-sans text-sm antialiased font-bold leading-normal text-blue-gray-900"> Sign up </a>
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
